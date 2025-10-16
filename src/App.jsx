@@ -14,7 +14,6 @@ function App() {
     setInput(""); 
   };
 
- 
   const handleEqual = () => {
     try {
       setInput(eval(input).toString()); 
@@ -28,7 +27,7 @@ return (
     <div className="calculator">
       <h2>Simple Calculator</h2>
 
-      <input type="text" value={input} readOnly />
+      <input type="text" value={input} readOnly placeholder="Enter" />
 
       <div className="buttons">
         <button onClick={() => handleClick("1")}>1</button>
